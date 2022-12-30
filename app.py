@@ -29,6 +29,8 @@ navbar = dbc.NavbarSimple(
 app = dash.Dash(__name__, external_stylesheets=[
                 dbc.themes.SKETCHY], use_pages=True, suppress_callback_exceptions=True)
 
+server = app.server
+
 app.layout = html.Div([
     navbar,
     dash.page_container,
